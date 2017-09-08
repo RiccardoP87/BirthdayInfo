@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="rp.com.birthdayinfo.View.Activities.RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/binfo"
+        android:textColor="@color/bpWhite"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:text="@string/info"
+        android:textColor="@color/bpWhite"
+        android:textSize="18dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="@string/info2"
+        android:textColor="@color/bpWhite"
+        android:textSize="18dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="@string/info3"
+        android:textColor="@color/bpWhite"
+        android:textSize="18dp"
+        tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/aWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/bpWhite">
+
+        <EditText
+            android:id="@+id/edittext_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="@color/bpWhite"
+            android:textColorHint="@color/bpWhite"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/bWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        android:textColorHint="@color/bpWhite">
+
+        <EditText
+            android:id="@+id/edittext_input2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/cognome"
+            android:inputType="textPersonName"
+            android:textColor="@color/bpWhite"
+            android:textColorHint="@color/bpWhite"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/man_woman"
+        android:textColor="@color/bpWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.andexert.library.RippleView
+            android:id="@+id/w"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="125dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                app:srcCompat="@drawable/woman"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                app:srcCompat="@drawable/man"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/Registrati"
+        android:textSize="18sp" />
+
+</LinearLayout>

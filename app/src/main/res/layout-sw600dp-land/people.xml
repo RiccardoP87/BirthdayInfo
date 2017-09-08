@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:focusable="false"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="-40dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical"
+        tools:ignore="InefficientWeight,UselessParent">
+
+        <LinearLayout
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            tools:ignore="InefficientWeight,NestedWeights,UselessParent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessLeaf">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_marginTop="50dp"
+                    app:cardBackgroundColor="@color/bpWhite"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/nome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="TextView"
+                        android:textSize="26sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/cognome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="75dp"
+                        android:text="TextView"
+                        android:textSize="26sp"
+                        tools:ignore="HardcodedText" />
+
+                    <ImageView
+                        android:id="@+id/manorwoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="900dp"
+                        android:layout_marginTop="30dp"
+                        app:srcCompat="@drawable/birthday"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/eta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="500dp"
+                        android:layout_marginTop="55dp"
+                        android:text="TextView"
+                        android:textSize="26sp"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+        </LinearLayout>
+</LinearLayout>
+    </LinearLayout>

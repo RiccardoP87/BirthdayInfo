@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/text_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:fillViewport="true"
+        android:scrollbarFadeDuration="250000"
+        tools:ignore="InefficientWeight,UselessParent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/rv_unitconverter"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:rv_alpha="255"
+                    app:rv_centered="false"
+                    app:rv_color="@color/cardview_light_background"
+                    app:rv_framerate="15"
+                    app:rv_rippleDuration="250"
+                    app:rv_type="rectangle">
+
+                    <ImageView
+                        android:id="@+id/iv_dont"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/half_view_margin_standard"
+                        android:src="@drawable/unit"
+                        tools:ignore="ContentDescription,DuplicateIds,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_toRightOf="@+id/iv_dont"
+                        android:text="UC &amp; Tools"
+                        android:textSize="24sp"
+                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                </com.andexert.library.RippleView>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/rv_dont"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:rv_alpha="255"
+                    app:rv_centered="false"
+                    app:rv_color="@color/cardview_light_background"
+                    app:rv_framerate="15"
+                    app:rv_rippleDuration="250"
+                    app:rv_type="rectangle">
+
+                    <ImageView
+                        android:id="@+id/iv_dont"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="@dimen/half_view_margin_standard"
+                        android:src="@drawable/dont"
+                        tools:ignore="ContentDescription,DuplicateIds,RtlHardcoded" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="100dp"
+                        android:layout_toRightOf="@+id/iv_dont"
+                        android:text="Don't call me"
+                        android:textSize="24sp"
+                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                </com.andexert.library.RippleView>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

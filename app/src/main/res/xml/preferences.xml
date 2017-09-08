@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory
+        android:title="@string/horror_t">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="horror_horoscope"
+            android:textColor="@color/bpLine_background"
+            android:title="@string/horror" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/love">
+
+        <CheckBoxPreference
+            android:key="love"
+            android:title="@string/love_t"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/scelta_h">
+
+        <CheckBoxPreference
+            android:key="zodiaco"
+            android:title="@string/zodi"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="cinese"
+            android:title="@string/c_zod"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="maya"
+            android:title="@string/mayan"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:key="celtico"
+            android:title="@string/celtic"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="arabo"
+            android:title="@string/h_arab"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:key="indu"
+            android:title="@string/i_zod"
+            android:textColor="@color/bpLine_background"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+
+    </PreferenceScreen>

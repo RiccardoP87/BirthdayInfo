@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimaryDark"
+                app:layout_scrollFlags="scroll|enterAlways" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/triquetra"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/oroscopo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="@color/bpLine_background"
+                    android:textSize="16sp"
+                    tools:ignore="RtlHardcoded" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/background"
+            android:orientation="vertical"
+            tools:ignore="InefficientWeight,NestedWeights,UselessParent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="UselessLeaf">
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trifoglio">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="350dp"
+                        app:srcCompat="@drawable/data"
+                        tools:ignore="ContentDescription,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/celtic_month"
+                        android:textColor="@color/bpWhite"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        tools:ignore="DuplicateIds,HardcodedText,RtlHardcoded,SpUsage" />
+                </FrameLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="50dp"
+                    app:cardBackgroundColor="@color/bpWhite"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="115dp"
+                        android:layout_marginTop="35dp"
+                        android:textSize="16sp"
+                        tools:ignore="DuplicateIds,RtlHardcoded" />
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background"
+            android:orientation="vertical"
+            tools:ignore="InefficientWeight,NestedWeights,UselessParent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <FrameLayout
+                    android:id="@+id/frame2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/trifoglio">
+
+                    <ImageView
+                        android:id="@+id/imageView99"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="350dp"
+                        android:background="@android:color/transparent"
+                        app:srcCompat="@drawable/triquetra"
+                        tools:ignore="ContentDescription,DuplicateIds,RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/c_c"
+                        android:textColor="@color/bpWhite"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+                </FrameLayout>
+
+                <com.andexert.library.RippleView
+                    android:id="@+id/zodiac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        app:cardBackgroundColor="@color/bpWhite"
+                        app:cardElevation="4dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/zodiacIcon"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_gravity="center"
+                            app:civ_border_color="#FF000000"
+                            app:civ_border_width="2dp"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView89"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="150dp"
+                            android:text="@string/details"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/textView88"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="175dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlHardcoded" />
+
+                    </android.support.v7.widget.CardView>
+
+                </com.andexert.library.RippleView>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@color/ampm_text_color">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/exchange" />
+
+        <com.andexert.library.RippleView
+            android:id="@+id/backR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingBottom="@dimen/half_view_margin_standard"
+            android:paddingLeft="@dimen/half_view_margin_standard"
+            android:paddingRight="@dimen/half_view_margin_standard"
+            android:paddingTop="@dimen/half_view_margin_standard"
+            app:rv_alpha="255"
+            app:rv_centered="true"
+            app:rv_color="@color/colorWhite"
+            app:rv_framerate="15"
+            app:rv_rippleDuration="200"
+            app:rv_type="simpleRipple"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                tools:ignore="ContentDescription" />
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:id="@+id/nextR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingBottom="@dimen/half_view_margin_standard"
+            android:paddingTop="@dimen/half_view_margin_standard"
+            app:rv_alpha="255"
+            app:rv_centered="true"
+            app:rv_color="@color/colorWhite"
+            app:rv_framerate="15"
+            app:rv_rippleDuration="200"
+            app:rv_type="simpleRipple"
+            tools:ignore="RtlHardcoded">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/half_view_margin_standard"
+                    android:layout_marginRight="@dimen/half_view_margin_standard"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/next_text"
+                        android:textColor="@color/bpblack"
+                        android:textSize="@dimen/app_sub_heads_text_size" />
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/h_arab"
+                        android:textColor="@color/bpblack"
+                        android:textSize="@dimen/app_captions_text_size" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/next"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+        </com.andexert.library.RippleView>
+    </FrameLayout>
+
+</LinearLayout>
